@@ -1,0 +1,11 @@
+[package]
+name = "mill_falc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+commons = { path = "../commons" }
+serde_json = "1.0.82"
+rocket = { version = "0.5.0-rc.2", features = ["json"] } #Rocket's RC2 would not be production ready I think, but it's just good as hell
